@@ -49,3 +49,15 @@ end
       <%= form.file_field :pictures, multiple: true %>
     </div>
 ```
+
+# views/pins/_pin.html.erb
+```erb
+  <%= pin.body %>
+
+  <%= pin.image %>
+  <hr />
+
+  <%= pin.pictures.each do |picture| %>
+    <%= picture %>
+  <% end %>
+```
